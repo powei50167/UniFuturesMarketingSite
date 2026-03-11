@@ -192,33 +192,36 @@
                 <p class="text-gray-500 text-sm">填寫下方資訊，伯維將親自為您規劃交易攻略</p>
             </div>
 
-            <form class="space-y-8">
+            <form class="space-y-8" action="https://formsubmit.co/rain50167@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="【統一期貨】新的專業諮詢預約表單">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 <!-- 基本資訊 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-2">姓名<span class="text-red-500">*</span></label>
-                        <input type="text" class="form-input" placeholder="請輸入姓名">
+                        <input type="text" name="name" class="form-input" placeholder="請輸入姓名" required>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-2">手機<span class="text-red-500">*</span></label>
-                        <input type="tel" class="form-input" placeholder="例：0912345678">
+                        <input type="tel" name="phone" class="form-input" placeholder="例：0912345678" required>
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-2">E-Mail<span class="text-red-500">*</span></label>
-                    <input type="email" class="form-input" placeholder="請輸入電子郵件">
+                    <input type="email" name="email" class="form-input" placeholder="請輸入電子郵件" required>
                 </div>
 
                 <!-- 複選項目 -->
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-3">想領取哪一類型的交易攻略？（可複選）</label>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 checkbox-group">
-                        <label><input type="checkbox"> 微台 / 小台 / 大台</label>
-                        <label><input type="checkbox"> 選擇權</label>
-                        <label><input type="checkbox"> 股票期貨</label>
-                        <label><input type="checkbox"> 程式交易</label>
-                        <label><input type="checkbox"> 我是新手，想先了解</label>
+                        <label><input type="checkbox" name="strategies[]" value="微台 / 小台 / 大台"> 微台 / 小台 / 大台</label>
+                        <label><input type="checkbox" name="strategies[]" value="選擇權"> 選擇權</label>
+                        <label><input type="checkbox" name="strategies[]" value="股票期貨"> 股票期貨</label>
+                        <label><input type="checkbox" name="strategies[]" value="程式交易"> 程式交易</label>
+                        <label><input type="checkbox" name="strategies[]" value="我是新手，想先了解"> 我是新手，想先了解</label>
                     </div>
                 </div>
 
@@ -227,24 +230,26 @@
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-3">目前是否已有統一帳戶？</label>
                         <div class="space-y-3 radio-group">
-                            <label><input type="radio" name="account"> 沒有，我想了解怎麼開戶</label>
-                            <label><input type="radio" name="account"> 有統一帳戶，想找伯維協理加開/服務</label>
-                            <label><input type="radio" name="account"> 還在考慮中</label>
+                            <label><input type="radio" name="account" value="沒有，我想了解怎麼開戶" required> 沒有，我想了解怎麼開戶</label>
+                            <label><input type="radio" name="account" value="有統一帳戶，想找伯維協理加開/服務"> 有統一帳戶，想找伯維協理加開/服務</label>
+                            <label><input type="radio" name="account" value="還在考慮中"> 還在考慮中</label>
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-3">方便伯維電話聯繫您的時段？</label>
                         <div class="space-y-3 radio-group">
-                            <label><input type="radio" name="time"> 上午 10:00 - 12:00</label>
-                            <label><input type="radio" name="time"> 中午 12:00 - 14:00</label>
-                            <label><input type="radio" name="time"> 下午 14:00 - 16:00</label>
-                            <label><input type="radio" name="time"> 隨時皆可</label>
+                            <label><input type="radio" name="contact_time" value="上午 10:00 - 12:00" required> 上午 10:00 - 12:00</label>
+                            <label><input type="radio" name="contact_time" value="中午 12:00 - 14:00"> 中午 12:00 - 14:00</label>
+                            <label><input type="radio" name="contact_time" value="下午 14:00 - 16:00"> 下午 14:00 - 16:00</label>
+                            <label><input type="radio" name="contact_time" value="隨時皆可"> 隨時皆可</label>
                         </div>
                     </div>
                 </div>
 
+                <p class="text-sm text-gray-500 text-center">送出後，系統將自動寄送預約內容至 <span class="font-semibold text-gray-700">rain50167@gmail.com</span></p>
+
                 <div class="pt-6 border-t border-gray-100 flex justify-center">
-                    <button type="button" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-12 rounded-xl shadow-lg transition-all active:scale-95">
+                    <button type="submit" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-12 rounded-xl shadow-lg transition-all active:scale-95">
                         確認送出
                     </button>
                 </div>
