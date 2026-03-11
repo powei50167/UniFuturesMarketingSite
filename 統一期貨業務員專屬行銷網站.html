@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>統一期貨 | 陳伯維 - 歡慶台股32000點</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+            position: relative;
+            overflow: hidden;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,140,0,0.15) 0%, rgba(255,140,0,0) 70%);
+            top: -100px;
+            right: -100px;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08);
+        }
+
+        .company-logo {
+            width: 36px;
+            height: 36px;
+        }
+
+        .highlight-box {
+            background-color: #fdfaf6;
+            border-left: 4px solid #f97316;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+        }
+
+        /* 表單自定義樣式 */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .form-input:focus {
+            border-color: #f97316;
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+        }
+        .checkbox-group label, .radio-group label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 0.5rem;
+            accent-color: #f97316;
+        }
+
+        /* QR Code 區塊動畫 */
+        .qr-hover:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- 頂部導航欄 -->
+    <header class="border-b border-gray-100 sticky top-0 bg-white/90 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <div class="company-logo mr-3">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" stroke="#E31D1A" stroke-width="8"/>
+                            <circle cx="50" cy="50" r="18" fill="#E31D1A"/>
+                            <rect x="10" y="46" width="80" height="8" fill="#E31D1A"/>
+                        </svg>
+                    </div>
+                    <span class="text-gray-900 font-bold text-lg md:text-xl flex items-center tracking-tight">
+                        PRESIDENT FUTURES | <span class="text-orange-600 ml-2">統一期貨 陳伯維</span>
+                    </span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-1 text-sm font-medium">
+                <a href="#" class="px-4 py-2 text-orange-600 bg-orange-50 rounded-lg">關於我</a>
+                <a href="#consult-form" class="px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">預約諮詢</a>
+                <a href="#open-account" class="px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">線上開戶</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 橫幅區塊 -->
+    <section class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="glass-card max-w-2xl mx-4">
+            <p class="text-orange-400 font-bold text-lg mb-2 tracking-widest">口數越多 中獎機會越大</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                歡慶台股 <span class="text-yellow-400">32000</span> 點
+            </h1>
+            <div class="inline-flex items-center bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium border border-white/10 mb-6">
+                <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                活動期間：2/9 ~ 3/20
+            </div>
+            <p class="text-lg md:text-xl font-bold text-white/90">交易滿 10 口就抽商品禮券</p>
+            <p class="text-xs mt-3 text-white/50 tracking-widest">機會無上限 · 週週抽禮券</p>
+        </div>
+    </section>
+
+    <!-- 主要內容區 -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-20">
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center">
+                    行情再創新高，您的機會在哪裡？
+                </h2>
+                <div class="highlight-box p-8 mb-8 rounded-r-xl">
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        台股站上三萬兩千點大關，<span class="text-orange-600 font-bold">陳伯維</span> 與統一期貨團隊與您站在一起！在這個波盪起伏的市場中，我們提供的不只是交易平台，更是您最可靠的戰略夥伴。
+                    </p>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-10">
+                    透過我們團隊精準的數據分析與口數風險控管模型，協助您在參與活動領取禮券的同時，更能穩健地累積交易實力。
+                </p>
+            </div>
+
+            <!-- 活動要點 -->
+            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                <h3 class="font-bold text-xl mb-6 text-gray-900 border-b border-gray-200 pb-4">活動詳情</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0 mt-0.5 mr-3">1</div>
+                        <div>
+                            <p class="font-bold text-sm">活動期間</p>
+                            <p class="text-xs text-gray-500">2/9~3/20 (排除春節)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0 mt-0.5 mr-3">2</div>
+                        <div>
+                            <p class="font-bold text-sm">參與資格</p>
+                            <p class="text-xs text-gray-500">期貨交易每滿 10 口抽 1 次</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0 mt-0.5 mr-3">3</div>
+                        <div>
+                            <p class="font-bold text-sm">獎項說明</p>
+                            <p class="text-xs text-gray-500">7-11/全家商品禮券週週抽</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 諮詢表單區塊 -->
+        <section id="consult-form" class="bg-white border border-gray-100 rounded-3xl p-8 md:p-12 card-shadow max-w-4xl mx-auto mb-16">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">預約專業諮詢服務</h3>
+                <p class="text-gray-500 text-sm">填寫下方資訊，伯維將親自為您規劃交易攻略</p>
+            </div>
+
+            <form class="space-y-8">
+                <!-- 基本資訊 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">姓名<span class="text-red-500">*</span></label>
+                        <input type="text" class="form-input" placeholder="請輸入姓名">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">手機<span class="text-red-500">*</span></label>
+                        <input type="tel" class="form-input" placeholder="例：0912345678">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">E-Mail<span class="text-red-500">*</span></label>
+                    <input type="email" class="form-input" placeholder="請輸入電子郵件">
+                </div>
+
+                <!-- 複選項目 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-3">想領取哪一類型的交易攻略？（可複選）</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 checkbox-group">
+                        <label><input type="checkbox"> 微台 / 小台 / 大台</label>
+                        <label><input type="checkbox"> 選擇權</label>
+                        <label><input type="checkbox"> 股票期貨</label>
+                        <label><input type="checkbox"> 程式交易</label>
+                        <label><input type="checkbox"> 我是新手，想先了解</label>
+                    </div>
+                </div>
+
+                <!-- 單選項目 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-3">目前是否已有統一帳戶？</label>
+                        <div class="space-y-3 radio-group">
+                            <label><input type="radio" name="account"> 沒有，我想了解怎麼開戶</label>
+                            <label><input type="radio" name="account"> 有統一帳戶，想找伯維協理加開/服務</label>
+                            <label><input type="radio" name="account"> 還在考慮中</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-3">方便伯維電話聯繫您的時段？</label>
+                        <div class="space-y-3 radio-group">
+                            <label><input type="radio" name="time"> 上午 10:00 - 12:00</label>
+                            <label><input type="radio" name="time"> 中午 12:00 - 14:00</label>
+                            <label><input type="radio" name="time"> 下午 14:00 - 16:00</label>
+                            <label><input type="radio" name="time"> 隨時皆可</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-gray-100 flex justify-center">
+                    <button type="button" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-12 rounded-xl shadow-lg transition-all active:scale-95">
+                        確認送出
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- 開戶 QR Code 區塊 -->
+        <section id="open-account" class="bg-gray-900 rounded-3xl p-8 md:p-12 text-center text-white max-w-4xl mx-auto mb-24 overflow-hidden relative">
+            <div class="relative z-10">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">立即線上開戶</h3>
+                <p class="text-gray-400 mb-8">掃描下方 QR Code 立即開戶</p>
+                
+                <div class="flex flex-col items-center">
+                    <!-- QR Code 圖片 -->
+                    <div class="bg-white p-4 rounded-2xl mb-8 qr-hover inline-block">
+                        <img src="陳伯維指定推薦網址QRCode.png" alt="陳伯維推薦開戶QR Code" class="w-40 h-40 md:w-48 md:h-48" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://eopen.pfcf.com.tw/eopen/?openExternalBrowser=1%23/home?recommendCode=sEs49A'">
+                    </div>
+                    
+                    <!-- 開戶連結按鈕 -->
+                    <a href="https://eopen.pfcf.com.tw/eopen/?openExternalBrowser=1#/home?recommendCode=sEs49A" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-xl shadow-orange-900/20">
+                        點我前往開戶頁面
+                    </a>
+                    
+                    <p class="mt-6 text-xs text-gray-500">推薦代碼：sEs49A </p>
+                </div>
+            </div>
+            <!-- 裝飾背景 -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-orange-600/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-orange-600/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
+        </section>
+
+        <!-- 服務特色 -->
+        <div class="mt-24">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="bg-white p-6 rounded-2xl text-center card-shadow border border-gray-50">
+                    <span class="text-3xl block mb-3">🏅</span>
+                    <h4 class="font-bold text-gray-800 text-xs">服務5000+客戶</h4>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center card-shadow border border-gray-50">
+                    <span class="text-3xl block mb-3">🤝</span>
+                    <h4 class="font-bold text-gray-800 text-xs">專屬團隊服務</h4>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center card-shadow border border-gray-50">
+                    <span class="text-3xl block mb-3">👥</span>
+                    <h4 class="font-bold text-gray-800 text-xs">專業人士首選</h4>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center card-shadow border border-gray-50">
+                    <span class="text-3xl block mb-3">📈</span>
+                    <h4 class="font-bold text-gray-800 text-xs">高手技術交流</h4>
+                </div>
+                <div class="bg-white p-6 rounded-2xl text-center card-shadow border border-gray-50 col-span-2 md:col-span-1">
+                    <span class="text-3xl block mb-3">🏆</span>
+                    <h4 class="font-bold text-gray-800 text-xs">14年最佳貢獻</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center text-gray-400 text-[10px] space-y-2">
+                <p class="text-gray-500 font-medium italic">警語：期貨交易具有高槓桿特性，可能產生極大損失，投資人應評估自身能力。</p>
+                <p>統一期貨股份有限公司 台北總公司 105台北市松山區東興路8號地下1樓</p>
+                <p>&copy; 統一期貨 | 陳伯維 數位服務團隊 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
