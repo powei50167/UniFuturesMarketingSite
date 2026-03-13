@@ -86,6 +86,34 @@
             transform: scale(1.02);
             transition: transform 0.3s ease;
         }
+
+        .feature-card {
+            border: 1px solid #f3f4f6;
+            border-radius: 1rem;
+            padding: 1.25rem;
+            background: #ffffff;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(249, 115, 22, 0.12);
+            border-color: #fdba74;
+        }
+
+        .section-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            background-color: #fff7ed;
+            color: #c2410c;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -110,6 +138,7 @@
             
             <nav class="hidden md:flex space-x-1 text-sm font-medium">
                 <a href="#" class="px-4 py-2 text-orange-600 bg-orange-50 rounded-lg">關於我</a>
+                <a href="#stock-futures-features" class="px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">交易股期優勢</a>
                 <a href="#consult-form" class="px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">預約諮詢</a>
                 <a href="#open-account" class="px-4 py-2 text-gray-600 hover:text-orange-600 hover:bg-gray-50 rounded-lg transition-colors">線上開戶</a>
             </nav>
@@ -184,6 +213,58 @@
                 </ul>
             </div>
         </div>
+
+        <section id="stock-futures-features" class="mb-20">
+            <div class="max-w-5xl mx-auto bg-gradient-to-br from-orange-50 via-white to-amber-50 border border-orange-100 rounded-3xl p-8 md:p-10 mb-10">
+                <span class="section-title mb-4">為什麼來統一期貨交易股期</span>
+                <h3 class="text-2xl md:text-3xl font-black text-gray-900 mb-5 leading-snug">還在東找西問、邊做邊學？三大後援讓你交易不再孤單！</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">強者選擇強者，交易股期選統一期貨。市場波動一閃即逝，統一期貨軟體系統幫你把握每個黃金進出場時機，好工具不怕行情快，就怕你還沒開始用！</p>
+                <a href="https://www.pfcf.com.tw/eventweb/ssf/" target="_blank" class="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-bold px-5 py-3 rounded-xl transition-all">
+                    前往活動專頁
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <article class="feature-card md:col-span-1">
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">🧠 30天長效智慧單</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
+                        <li>設定商品價位與智慧單，長效追蹤持續 30 天（包含假日）。</li>
+                        <li>夜盤、周末、非交易時段都可提前預掛，全天候守住機會。</li>
+                        <li>適用波段 / 保本 / 當沖，支援長效 30 天觸價單、二擇一與 AB 單。</li>
+                    </ul>
+                </article>
+
+                <article class="feature-card md:col-span-1">
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">📲 Telegram成交與到價通知</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
+                        <li>專業訊息通道，推播速度更快，手機 APP 與電腦 Web 跨平台同步。</li>
+                        <li>到價通知可設定單次觸價或區間追蹤（10~200 TICK），最長 30 天。</li>
+                        <li>成交通知即時推播，免盯盤也不漏掉每一次關鍵成交。</li>
+                    </ul>
+                </article>
+
+                <article class="feature-card md:col-span-1">
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">🕸️ 蛛網回掛與結算價試算</h4>
+                    <ul class="space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
+                        <li>回掛策略仿蛛網理論，適合盤整或區間震盪，提供單次與連續回掛。</li>
+                        <li>電腦版新大戶提供結算價試算，提前模擬股期/指數結算落點。</li>
+                        <li>結合參考結算價與資料完成率，協助價差套利與降低情緒交易。</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 card-shadow">
+                <h4 class="text-lg font-bold text-gray-900 mb-4">系統特色功能重點</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                    <div class="bg-orange-50 rounded-xl p-4 font-medium text-orange-800">行情成交即時報，追蹤好安心</div>
+                    <div class="bg-orange-50 rounded-xl p-4 font-medium text-orange-800">搶先布局結算價</div>
+                    <div class="bg-orange-50 rounded-xl p-4 font-medium text-orange-800">蛛網回掛穩節奏</div>
+                    <div class="bg-orange-50 rounded-xl p-4 font-medium text-orange-800">30天長效智慧單，免盯盤不漏機會</div>
+                </div>
+                <p class="text-xs text-gray-500 mt-4 leading-relaxed">提醒：股期結算功能請於結算日中午 12:29 前開啟；指數結算功能請於 12:59 前開啟，以確保試算有效性。</p>
+            </div>
+        </section>
 
         <!-- 諮詢表單區塊 -->
         <section id="consult-form" class="bg-white border border-gray-100 rounded-3xl p-8 md:p-12 card-shadow max-w-4xl mx-auto mb-16">
